@@ -42,21 +42,22 @@ months_employed = st.number_input(
     help="Total number of months employed"
 )
 
-# DTI calculation
 st.subheader("Debt Information")
-
-monthly_income = income / 12
-
 
 monthly_debt = st.number_input(
     "Total Monthly Debt Payments",
     min_value=0.0,
-    help = "Minimum legal amounts you must pay each month toward the borrowed money"
+    value=500.0
 )
 
+# Calculate monthly income from annual income
+monthly_income = income / 12
 
-# Calculate DTI
-dti_ratio = monthly_debt / monthly_income
+# Calculate DTI ratio safely
+if monthly_income > 0:
+    dti_ratio = monthly_debt / monthly_income
+else:
+    dti_ratio = 0
 
 st.info(f"Estimated Debt-to-Income Ratio: {dti_ratio:.2%}")
 
