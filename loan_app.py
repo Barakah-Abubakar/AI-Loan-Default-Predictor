@@ -47,7 +47,7 @@ months_employed = st.number_input(
 st.subheader("Debt Information")
 
 monthly_income = income / 12
-)
+
 
 monthly_debt = st.number_input(
     "Total Monthly Debt Payments",
