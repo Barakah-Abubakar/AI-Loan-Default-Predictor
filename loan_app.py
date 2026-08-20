@@ -6,8 +6,7 @@ import joblib
 model = joblib.load("loan_risk_model.pkl")
 
 st.title("AI Loan Risk Prediction App")
-st.write("This tool uses basic borrower and loan information to estimatethe potential risk of loan default." br/
-         "Fill in the details below to predict loan eligibility.")
+st.write("This tool uses basic borrower and loan information to estimate the potential risk of loan default. Fill in the details below to predict loan eligibility.")
 
 st.subheader("Applicant Financial Information")
 
