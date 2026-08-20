@@ -51,7 +51,6 @@ monthly_income = income / 12
 monthly_debt = st.number_input(
     "Total Monthly Debt Payments",
     min_value=0.0,
-    value=500.0
     help = "Minimum legal amounts you must pay each month toward the borrowed money"
 )
 
