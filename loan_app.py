@@ -47,7 +47,8 @@ st.subheader("Debt Information")
 monthly_debt = st.number_input(
     "Total Monthly Debt Payments",
     min_value=0.0,
-    value=500.0
+    value=500.0,
+    st.info("Minimum legal amounts you must pay each month toward the borrowed money")
 )
 
 # Calculate monthly income from annual income
