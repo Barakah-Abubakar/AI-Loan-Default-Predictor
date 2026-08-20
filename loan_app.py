@@ -3,7 +3,7 @@ import streamlit as st
 import pandas as pd
 import joblib
 
-model = joblib.load("loan_risk_model.pkl")
+model = joblib.load("loan_default_model.pkl")
 
 st.title("AI Loan Risk Prediction App")
 st.write("This tool uses basic borrower and loan information to estimate the potential risk of loan default. Fill in the details below to predict loan eligibility.")
