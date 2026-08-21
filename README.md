@@ -1,4 +1,4 @@
-# AI Loan Default risk Predictor
+# AI Loan Default Risk Predictor
 
 A web application using machine learning to assess the risk of loan default based on basic borrower's financial parameters and loan details.
 
