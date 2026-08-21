@@ -57,6 +57,7 @@ Feature selection, Model retraining and evaluation
 Model Deployment
 
 **Data Preparation**
+
 The dataset was prepared for machine learning by:
 Removing the loan identifier, 
 Separating features and the target variable, 
@@ -94,6 +95,8 @@ Overall accuracy - 66%.
 
 
 **Web Application Deliverable**
+
+
 The machine learning model was deployed as a web application using Streamlit.
 Users provide:
 Age of the applicant
@@ -104,8 +107,8 @@ Months Employed
 Monthly Debt Payments
 The application automatically calculates the Debt-to-Income Ratio and uses the trained model to estimate the probability of loan default.
 The result is displayed as:
-Estimated Default Risk (%)
-Low, Moderate, or High Risk category
+Estimated Default Risk (%) and  categorized into Low, Moderate, or High Risk category based on prediction probability.
+
  _link to the web app above_
 
 **Technologies Used**
